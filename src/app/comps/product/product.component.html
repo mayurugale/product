@@ -1,0 +1,14 @@
+<div fxLayout="row warp" fxLayoutGap="5px" fxLayoutAlign="center" >
+<mat-card *ngFor="let p of js" fxFlex="32">
+
+  <mat-card-title>
+    {{p.Name}}
+  </mat-card-title>
+    <img src="http://localhost/quiz/macbook-pro-15-inch.jpg">
+    <mat-card-subtitle>
+     <b> Price :- {{p.Price}} </b>
+    </mat-card-subtitle>
+    <button mat-raised-button color="primary" routerLink="/card/{{p.Name }}">Buy Now</button>
+    <button mat-raised-button color="primary">Cancel</button>
+</mat-card>
+</div>

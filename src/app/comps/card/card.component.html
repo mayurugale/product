@@ -1,0 +1,17 @@
+<mat-card>
+    <mat-card-header>
+      <mat-card-title>{{js.Name}}</mat-card-title><br/>
+
+      <img src="http://localhost/quiz/macbook-pro-15-inch.jpg">
+    </mat-card-header>  
+    <mat-card-content>
+      {{js.Description}}
+    </mat-card-content>
+    <b>Price : - {{js.Price}}</b>
+    <mat-card-actions fxLayout="row" fxLayoutGap="3px" fxLayoutAlign="center center">
+      <div>
+        <button mat-button (click)="minus()">-</button>
+        <input type="number" min="0" max="100" [value]="js.Quantity">
+        <button mat-button (click)="plus()">+</button>
+      </div>
+      <b>Total Price :- {{tprice}}</b>
